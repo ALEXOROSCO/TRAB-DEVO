@@ -1,4 +1,26 @@
-site_name: Documentação TRAB-DEVO
-nav:
-  - Home: index.md
+site_name: TRAB-DEVO
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: pink
+    - scheme: slate
+      primary: deep orange
+      accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ALEXOROSCO/TRAB-DEVO
 
