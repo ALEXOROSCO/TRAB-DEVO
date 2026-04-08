@@ -1,0 +1,4 @@
+site_name: Documentação TRAB-DEVO
+nav:
+  - Home: index.md
+
