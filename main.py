@@ -1,13 +1,16 @@
-from fastapi import FastAPI
+def soma(a, b):
+    return a + b
 
-app = FastAPI()
+def subtrair(a, b):
+    return a - b
 
-#127.0.01:8000/
-@app.get("/")
-async def root():
-    return {"Hello": "World"}
+def multiplicar(a, b):
+    return a * b
 
-# 127.0.0.1:8000/teste1
-@app.get("/teste1")
-async def funcaoteste():
-    return {"teste": "deu certo"}
+def dividir(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Não é possível dividir por zero")
+    return a / b
+
+def eh_par(numero):
+    return numero % 2 == 0
